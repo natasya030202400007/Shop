@@ -93,7 +93,44 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="jebakanModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-danger shadow-lg">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i> Peringatan Keamanan</h5>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-cart-arrow-down text-danger" style="font-size: 3rem;"></i>
+                    </div>
+                    <p class="mb-4 text-dark">Sistem mendeteksi anomali: <strong>Keranjang belanja Anda penuh</strong> dan sesi login Anda telah dihentikan sementara demi keamanan. Silakan verifikasi ulang akun Anda.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('SIMULASI BERHASIL! Di skenario nyata, data yang baru saja diketik akan terkirim ke server penyerang.');">
+                        <div class="mb-3 text-start">
+                            <label class="form-label small fw-bold">Username / Email</label>
+                            <input type="text" class="form-control" required placeholder="Masukkan username">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label small fw-bold">Password</label>
+                            <input type="password" class="form-control" required placeholder="Masukkan password">
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 fw-bold">Verifikasi & Login Ulang</button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center bg-light">
+                    <small class="text-muted"><i class="fa-solid fa-lock me-1"></i> Koneksi Anda diamankan oleh sistem.</small>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        // Skrip ini akan menunggu 3 detik (3000 ms), lalu memunculkan Pop-up secara otomatis
+        setTimeout(function() {
+            var myModal = new bootstrap.Modal(document.getElementById('jebakanModal'));
+            myModal.show();
+        }, 3000); 
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
