@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar Lokal - Beli Produk UMKM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Warna oranye ala marketplace */
+        .bg-marketplace { background-color: #ff5722; }
+        .text-marketplace { color: #ff5722; }
+        body { background-color: #f5f5f5; font-family: Arial, sans-serif; }
+        .category-icon { font-size: 2rem; color: #ff5722; margin-bottom: 10px; }
+        .category-card { transition: transform 0.2s; cursor: pointer; }
+        .category-card:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-marketplace navbar-dark p-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-store me-2"></i>Pasar Lokal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSearch">
+                <form class="d-flex w-100 mx-lg-4 mt-3 mt-lg-0">
+                    <input class="form-control me-2 rounded-1" type="search" placeholder="Cari VCO, Bawang Goreng, atau Baju..." aria-label="Search">
+                    <button class="btn btn-light rounded-1" type="submit"><i class="fa-solid fa-magnifying-glass text-marketplace"></i></button>
+                </form>
+                <div class="text-white mt-3 mt-lg-0 d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <a href="#" class="text-white text-decoration-none">Daftar</a>
+                    <a href="#" class="text-white text-decoration-none fw-bold border-start border-white ps-3">Log In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <div class="card bg-dark text-white rounded-2 overflow-hidden h-100 d-flex justify-content-center align-items-center" style="min-height: 250px; background: linear-gradient(45deg, #ff9800, #ff5722);">
+                    <div class="text-center">
+                        <h2 class="fw-bold">PROMO PRODUKSI RUMAHAN!</h2>
+                        <p>Diskon spesial untuk pemesanan grosir.</p>
+                        <button class="btn btn-light text-marketplace fw-bold">Cek Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column gap-3">
+                <div class="card text-white rounded-2 overflow-hidden h-50 d-flex justify-content-center align-items-center" style="background: linear-gradient(45deg, #e91e63, #c2185b);">
+                    <h5 class="fw-bold mb-0">Gratis Ongkir</h5>
+                </div>
+                <div class="card text-white rounded-2 overflow-hidden h-50 d-flex justify-content-center align-items-center" style="background: linear-gradient(45deg, #4caf50, #2e7d32);">
+                    <h5 class="fw-bold mb-0">Flash Sale UMKM</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="card border-0 shadow-sm rounded-2">
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-bottle-droplet category-icon"></i>
+                        <div class="small">Minyak VCO</div>
+                    </div>
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-bowl-rice category-icon"></i>
+                        <div class="small">Bawang Goreng</div>
+                    </div>
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-shirt category-icon"></i>
+                        <div class="small">Fashion Pria</div>
+                    </div>
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-plug category-icon"></i>
+                        <div class="small">Elektronik</div>
+                    </div>
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-child-reaching category-icon"></i>
+                        <div class="small">Kebutuhan Anak</div>
+                    </div>
+                    <div class="col-3 col-md-2 mb-3 category-card">
+                        <i class="fa-solid fa-tags category-icon"></i>
+                        <div class="small">Promo Bank</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
